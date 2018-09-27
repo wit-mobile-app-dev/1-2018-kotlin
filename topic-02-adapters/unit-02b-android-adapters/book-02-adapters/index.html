@@ -115,7 +115,7 @@ h3 {
   </div>
 </div>
 
-<div class="ui segment pushable">
+<div class="ui pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     <br><br>
     
@@ -136,7 +136,7 @@ h3 {
     
   </div>
   <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
+    <div class="ui basic segment">
       <br>
       
         <div class="ui tab segment lab" data-tab="Lab-02 Adapters">
@@ -728,18 +728,24 @@ class PlacemarkAdapter constructor(private var placemarks: List&lt;PlacemarkMode
 </div>
 
 <script>
-  $(document).ready(function() {
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
-      divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
-    }
-  });
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
 });
 
   $(document).ready(function() {

@@ -115,7 +115,7 @@ h3 {
   </div>
 </div>
 
-<div class="ui segment pushable">
+<div class="ui pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     <br><br>
     
@@ -136,7 +136,7 @@ h3 {
     
   </div>
   <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
+    <div class="ui basic segment">
       <br>
       
         <div class="ui tab segment lab" data-tab="Lab-03 Models">
@@ -370,7 +370,7 @@ data class PlacemarkModel(var title: String = &quot;&quot;,
                           var description: String = &quot;&quot;) : Parcelable</code></pre>
 <p>It implements a parcelize capability. This is discussed in detail here:</p>
 <ul>
-<li><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x68;&#x74;&#x74;&#x70;&#x73;&#x3a;&#47;&#x2f;&#109;&#101;&#100;&#105;&#x75;&#x6d;&#46;&#x63;&#x6f;&#109;&#47;&#x40;&#x42;&#x6c;&#97;&#100;&#101;&#67;&#111;&#x64;&#x65;&#x72;&#47;&#x72;&#x65;&#100;&#117;&#99;&#105;&#x6e;&#x67;&#45;&#112;&#x61;&#114;&#x63;&#x65;&#108;&#97;&#98;&#108;&#101;&#45;&#98;&#x6f;&#x69;&#x6c;&#x65;&#114;&#112;&#x6c;&#97;&#116;&#x65;&#45;&#99;&#x6f;&#x64;&#x65;&#45;&#x75;&#115;&#105;&#x6e;&#103;&#45;&#107;&#x6f;&#x74;&#108;&#x69;&#110;&#45;&#x37;&#52;&#49;&#99;&#51;&#x31;&#x32;&#52;&#x61;&#x34;&#x39;&#97;">&#x68;&#x74;&#x74;&#x70;&#x73;&#x3a;&#47;&#x2f;&#109;&#101;&#100;&#105;&#x75;&#x6d;&#46;&#x63;&#x6f;&#109;&#47;&#x40;&#x42;&#x6c;&#97;&#100;&#101;&#67;&#111;&#x64;&#x65;&#x72;&#47;&#x72;&#x65;&#100;&#117;&#99;&#105;&#x6e;&#x67;&#45;&#112;&#x61;&#114;&#x63;&#x65;&#108;&#97;&#98;&#108;&#101;&#45;&#98;&#x6f;&#x69;&#x6c;&#x65;&#114;&#112;&#x6c;&#97;&#116;&#x65;&#45;&#99;&#x6f;&#x64;&#x65;&#45;&#x75;&#115;&#105;&#x6e;&#103;&#45;&#107;&#x6f;&#x74;&#108;&#x69;&#110;&#45;&#x37;&#52;&#49;&#99;&#51;&#x31;&#x32;&#52;&#x61;&#x34;&#x39;&#97;</a></li>
+<li><a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x68;&#x74;&#116;&#112;&#x73;&#58;&#x2f;&#x2f;&#x6d;&#x65;&#x64;&#105;&#x75;&#x6d;&#46;&#x63;&#x6f;&#x6d;&#47;&#x40;&#66;&#x6c;&#x61;&#x64;&#x65;&#67;&#x6f;&#x64;&#101;&#114;&#x2f;&#114;&#101;&#100;&#x75;&#99;&#105;&#110;&#103;&#45;&#112;&#x61;&#114;&#99;&#101;&#108;&#97;&#x62;&#108;&#101;&#x2d;&#x62;&#x6f;&#105;&#108;&#x65;&#114;&#112;&#x6c;&#97;&#x74;&#x65;&#45;&#x63;&#111;&#100;&#x65;&#45;&#x75;&#x73;&#x69;&#x6e;&#103;&#x2d;&#x6b;&#x6f;&#x74;&#x6c;&#x69;&#x6e;&#x2d;&#x37;&#x34;&#49;&#x63;&#x33;&#49;&#50;&#x34;&#97;&#52;&#57;&#97;">&#x68;&#x74;&#116;&#112;&#x73;&#58;&#x2f;&#x2f;&#x6d;&#x65;&#x64;&#105;&#x75;&#x6d;&#46;&#x63;&#x6f;&#x6d;&#47;&#x40;&#66;&#x6c;&#x61;&#x64;&#x65;&#67;&#x6f;&#x64;&#101;&#114;&#x2f;&#114;&#101;&#100;&#x75;&#99;&#105;&#110;&#103;&#45;&#112;&#x61;&#114;&#99;&#101;&#108;&#97;&#x62;&#108;&#101;&#x2d;&#x62;&#x6f;&#105;&#108;&#x65;&#114;&#112;&#x6c;&#97;&#x74;&#x65;&#45;&#x63;&#111;&#100;&#x65;&#45;&#x75;&#x73;&#x69;&#x6e;&#103;&#x2d;&#x6b;&#x6f;&#x74;&#x6c;&#x69;&#x6e;&#x2d;&#x37;&#x34;&#49;&#x63;&#x33;&#49;&#50;&#x34;&#97;&#52;&#57;&#97;</a></li>
 </ul>
 <p>...but this was written without using the new feature we have just enabled, which dramatically reduces the boilerplate even further. Our approach is discussed here:</p>
 <ul>
@@ -503,18 +503,24 @@ class PlacemarkMemStore : PlacemarkStore, AnkoLogger {
 </div>
 
 <script>
-  $(document).ready(function() {
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
-      divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
-    }
-  });
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
 });
 
   $(document).ready(function() {
