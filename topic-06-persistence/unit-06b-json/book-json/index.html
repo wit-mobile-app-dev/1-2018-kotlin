@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
-        type="text/css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
-        rel="stylesheet"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <style>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -66,109 +57,116 @@ h3 {
 
 
 
-  </style>
-</head>
+    </style>
+  </head>
 
-<body>
+  <body>
+    
+    
 
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        
+          <a href="../../index.html"> Persistence  </a>
+        
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Lab-06 JSON">
+            Lab-06 JSON
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="05">
+            05
+          </a>
+        
+          <a class="item" data-tab="07">
+            07
+          </a>
+        
+          <a class="item" data-tab="Exercises">
+            Exercises
+          </a>
+        
+      </div>
+    </div>
 
-
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    
-      <a href="../../index.html"> Persistence  </a>
-    
-  </header>
-  <div class="right tab-menu menu">
-    
-      <a class="item" data-tab="Lab-06 JSON">
-        Lab-06 JSON
-      </a>
-    
-      <a class="item" data-tab="01">
-        01
-      </a>
-    
-      <a class="item" data-tab="02">
-        02
-      </a>
-    
-      <a class="item" data-tab="03">
-        03
-      </a>
-    
-      <a class="item" data-tab="04">
-        04
-      </a>
-    
-      <a class="item" data-tab="05">
-        05
-      </a>
-    
-      <a class="item" data-tab="07">
-        07
-      </a>
-    
-      <a class="item" data-tab="Exercises">
-        Exercises
-      </a>
-    
-  </div>
-</div>
-
-<div class="ui pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-00-overview/book-00-studio/index.html">Lab-00 Studio </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-01-activity/unit-01b-android-activitiy/book-01-activity/index.html">Lab-01 Activities </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-02-adapters/unit-02b-android-adapters/book-02-adapters/index.html">Lab-02 Adapters </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-03-models/unit-03b-android-models/book-03-models/index.html">Lab-03 Models </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-04-images/unit-04b-images/book-04-images/index.html">Lab-04 Images </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-05-map-activity/unit-05b-map-activity/book-maps/index.html">Lab-05 MapActivity </a>
-      
-    
-      
-        <a class="item"
-           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-06-persistence/unit-06b-json/book-json/index.html">Lab-06 JSON </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment">
-      <br>
-      
-        <div class="ui tab segment lab" data-tab="Lab-06 JSON">
-          <h1>Objectives</h1>
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-overview/book-00-studio/index.html">
+              Lab-00 Studio
+            </a>
+          
+        
+          
+            <a class="item" href="../../unit-01b-android-activitiy/book-01-activity/index.html">
+              Lab-01 Activities
+            </a>
+          
+        
+          
+            <a class="item" href="../../unit-02b-android-adapters/book-02-adapters/index.html">
+              Lab-02 Adapters
+            </a>
+          
+        
+          
+            <a class="item" href="../../unit-03b-android-models/book-03-models/index.html">
+              Lab-03 Models
+            </a>
+          
+        
+          
+            <a class="item" href="../../unit-04b-images/book-04-images/index.html">
+              Lab-04 Images
+            </a>
+          
+        
+          
+            <a class="item" href="../../unit-05b-map-activity/book-maps/index.html">
+              Lab-05 MapActivity
+            </a>
+          
+        
+          
+            <a class="active item" href="../../unit-06b-json/book-json/index.html">
+              Lab-06 JSON
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Lab-06 JSON">
+              <h1>Objectives</h1>
 <p>Save and restore placemarks from a JSON formatted file</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="01">
-          <h1>Exercises</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Exercises</h1>
 <h1>Exercise 1</h1>
 <p>If you create a new placemark - and set it location, note that when you click on the marker it shows its lat/lng. Move it around - and notice that the lat/lng in the panel never changes (even though it is at a different location).</p>
 <p>See if you can fix this - such that it always shows the correct location.</p>
@@ -258,10 +256,10 @@ data class PlacemarkModel(var id: Long = 0,
     }
   }</code></pre>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="02">
-          <h1>MainApp &amp; PlacemarkListActivity Adjustments</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>MainApp &amp; PlacemarkListActivity Adjustments</h1>
 <p>First revise how we create the placemarks store object:</p>
 <h2>MainApp</h2>
 <pre><code>package org.wit.placemark.main
@@ -380,10 +378,10 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
 }</code></pre>
 <p>Make sure the app continues to run as expected.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="03">
-          <h1>Persistence</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>Persistence</h1>
 <p>Currently our placemarks are transient - when the app is closed the placemarks are lost. We would like to make them persistent - they are retained between app launches.</p>
 <p>There are many strategies for implementing persistence - both local and remote (cloud). We will start with one of the simplest - storing the placemarks in a simple file.</p>
 <p>Before we try this, you should get used to exploring the phones&#39; file system. In Studio, select <code>View-&gt;Tools Windows-&gt;Device File Explorer</code>:</p>
@@ -394,10 +392,10 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
 <p><img src="img/05.png" alt=""></p>
 <p>We will be monitoring this directory - as it is the default location for an files you write/read in your app.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="04">
-          <h1>FileHelpers</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>FileHelpers</h1>
 <p>To keep our file access simple, we introduce some general purpose file helper functions:</p>
 <h2>FileHelpers</h2>
 <pre><code>package org.wit.placemark.helpers
@@ -448,10 +446,10 @@ fun exists(context: Context, filename: String): Boolean {
 <p>Place this in the existing helpers package.</p>
 <p>These functions are using the standard java.io streams facilities. However, they all require an additional paramater of type <code>context</code>, and this is used when opening the file. This context will be unique to each application - and we must make sure to acquire and use it when deailing with file I/O.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="05">
-          <h1>PlacemarkJSONStore</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="05">
+              <h1>PlacemarkJSONStore</h1>
 <p>The Json file format is one of the most ubiquitous and easily understood file formats:</p>
 <ul>
 <li><a href="http://www.json.org/">http://www.json.org/</a></li>
@@ -527,10 +525,10 @@ val gsonBuilder = GsonBuilder().setPrettyPrinting().create()
 val listType = object : TypeToken&lt;java.util.ArrayList&lt;PlacemarkModel&gt;&gt;() {}.type</code></pre>
 <p>These are used in the implementations. These describe the filename, a utility to serialize a java class (pretty printing it) and an object to help in converting a JSON string to a java collection (recognising PlacemarkModels along the way)</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="07">
-          <h2>MainApp</h2>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="07">
+              <h2>MainApp</h2>
 <p>To use the new store, we just need to switch it in the application object:</p>
 <pre><code>package org.wit.placemark.main
 
@@ -557,20 +555,20 @@ class MainApp : Application(), AnkoLogger {
 <p>Finally, locate the actual file in the Device File Explorer:</p>
 <p><img src="img/06.png" alt=""></p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="Exercises">
-          <h2>Solution</h2>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercises">
+              <h2>Solution</h2>
 <p>Placemark application so far:</p>
 <ul>
 <li><a href="archives/placemark-06.zip">placemark-06.zip</a></li>
 </ul>
 <h2>Exercise 1: Switching Stores</h2>
-<p>Change back to using the PlacemarkMemStore instead of PlacemarkStoreRoom. The only change you need to make should be in MainApp.</p>
+<p>Change back to using the PlacemarkMemStore instead of PlacemarkJSONStore. The only change you need to make should be in MainApp.</p>
 <p>Try some experiments to make sure the persistence is working as expected:</p>
 <ul>
 <li>Using MemStore - create some placemarks and then kill the app. Relaunch, and verify that all placemarks are gone</li>
-<li>Using RoomStore - try the same experiment. This time the placemarks should persist between application terminations.</li>
+<li>Using JsonStore - try the same experiment. This time the placemarks should persist between application terminations.</li>
 </ul>
 <h2>Exercise 2: PlacemarkJSONStore update method</h2>
 <p>Complete the implementation of the update method in the PlacemarkJSONStore class. Use the corresponding method in PlacemarkMemStore as a guide (and don&#39;t forget to save changes to the file).</p>
@@ -590,34 +588,28 @@ class MainApp : Application(), AnkoLogger {
   }</code></pre>
 <p>To trigger the actual deletion introduce a new <code>delete</code> button alongside the <code>cancel</code> button on the PlacemarkActivity. Pressing this button should trigger the delete method.</p>
 
+            </div>
+          
         </div>
-      
+      </div>
     </div>
-  </div>
-</div>
 
-<script>
-  $(document).on('keydown', function(e) {
-  e = e || window.event;
-  var nextTab;
-  switch (e.which || e.keyCode) {
-    case 37: // left
-      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-
-    case 39: // right
-      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-  }
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
 });
 
-  $(document).ready(function() {
+      $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -650,6 +642,6 @@ class MainApp : Application(), AnkoLogger {
     .sidebar('attach events', '#toc');
 });
 
-</script>
-</body>
+    </script>
+  </body>
 </html>
