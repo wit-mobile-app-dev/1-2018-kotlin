@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-      
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -57,120 +66,118 @@ h3 {
 
 
 
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
+<body>
+
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
+      <a href="../../index.html"> GoogleMap Activity  </a>
     
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-05 MapActivity">
+        Lab-05 MapActivity
+      </a>
+    
+      <a class="item" data-tab="Exercise Solutions">
+        Exercise Solutions
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="Exercises">
+        Exercises
+      </a>
+    
+  </div>
+</div>
 
-    <div class="ui fixed top pointing inverted stackable menu labmenu">
-      <header class="header item">
-        <i id="toc" class="sitemap icon"></i>
-        
-          <a href="../../index.html"> GoogleMap Activity  </a>
-        
-      </header>
-      <div class="right tab-menu menu">
-        
-          <a class="item" data-tab="Lab-05 MapActivity">
-            Lab-05 MapActivity
-          </a>
-        
-          <a class="item" data-tab="Exercise Solutions">
-            Exercise Solutions
-          </a>
-        
-          <a class="item" data-tab="02">
-            02
-          </a>
-        
-          <a class="item" data-tab="03">
-            03
-          </a>
-        
-          <a class="item" data-tab="04">
-            04
-          </a>
-        
-          <a class="item" data-tab="05">
-            05
-          </a>
-        
-          <a class="item" data-tab="06">
-            06
-          </a>
-        
-          <a class="item" data-tab="07">
-            07
-          </a>
-        
-          <a class="item" data-tab="Exercises">
-            Exercises
-          </a>
-        
-      </div>
-    </div>
-
-    <div class="ui segment pushable">
-      <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <br><br>
-        
-          
-            <a class="item" href="../../topic-00-overview/book-00-studio/index.html">
-              Lab-00 Studio
-            </a>
-          
-        
-          
-            <a class="item" href="../../unit-01b-android-activitiy/book-01-activity/index.html">
-              Lab-01 Activities
-            </a>
-          
-        
-          
-            <a class="item" href="../../unit-02b-android-adapters/book-02-adapters/index.html">
-              Lab-02 Adapters
-            </a>
-          
-        
-          
-            <a class="item" href="../../unit-03b-android-models/book-03-models/index.html">
-              Lab-03 Models
-            </a>
-          
-        
-          
-            <a class="item" href="../../unit-04b-images/book-04-images/index.html">
-              Lab-04 Images
-            </a>
-          
-        
-          
-            <a class="active item" href="../../unit-05b-map-activity/book-maps/index.html">
-              Lab-05 MapActivity
-            </a>
-          
-        
-          
-            <a class="item" href="../../unit-06b-json/book-json/index.html">
-              Lab-06 JSON
-            </a>
-          
-        
-      </div>
-      <div class="pusher" tabindex="-1">
-        <div class="ui basic segment" id="labchat">
-          <br>
-          
-            <div  class="ui tab segment lab" data-tab="Lab-05 MapActivity">
-              <h1>Summary</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-00-overview/book-00-studio/index.html">Lab-00 Studio </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-01-activity/unit-01b-android-activitiy/book-01-activity/index.html">Lab-01 Activities </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-02-adapters/unit-02b-android-adapters/book-02-adapters/index.html">Lab-02 Adapters </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-03-models/unit-03b-android-models/book-03-models/index.html">Lab-03 Models </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-04-images/unit-04b-images/book-04-images/index.html">Lab-04 Images </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-05-map-activity/unit-05b-map-activity/book-maps/index.html">Lab-05 MapActivity </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-06-persistence/unit-06b-json/book-json/index.html">Lab-06 JSON </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-07-layouts/unit-07b-map-view/book-0-map-view/index.html">Lab-07 MapView </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-05 MapActivity">
+          <h1>Summary</h1>
 <p>Include a MapActivity, enabling the user to select the location of the placemark </p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Exercise Solutions">
-              <h1>Exercise Solutions</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercise Solutions">
+          <h1>Exercise Solutions</h1>
 <h2>Exercise 1</h2>
 <p>As a user, create a new placemark with a title + image. Now edit the placemark and change the title - and update the placemark. Notice that the title has changed in PlacemarkList. </p>
 <p>Edit the placemark and change the image - and update the placemark. Go back in to edit the placemark again - what image do you see?</p>
@@ -268,10 +275,10 @@ h3 {
     }
 ...</code></pre>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="02">
-              <h1>Location Resources</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Location Resources</h1>
 <p>First introduce a new button to set the location. This requires:</p>
 <ul>
 <li>string resource</li>
@@ -301,10 +308,10 @@ h3 {
 <p><img src="img/02.png" alt=""></p>
 <p>and also the log appears when the button is pressed.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="03">
-              <h1>Google Maps Activity</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Google Maps Activity</h1>
 <p>Briefly review then general guide to incorporating google maps here:</p>
 <ul>
 <li><a href="https://developer.android.com/training/maps/index.html">https://developer.android.com/training/maps/index.html</a></li>
@@ -468,10 +475,10 @@ app/src/debug/res/values/google_maps_api.xml</code></pre>
 <p>If they key is correctly entered, the map should appear:</p>
 <p><img src="img/04.png" alt=""></p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="04">
-              <h1>Tidyup Generated code</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Tidyup Generated code</h1>
 <p>We might remove some of the additional comments generated by the studio wizard (read them first)</p>
 <h2>AndroidManifest.xml</h2>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -550,10 +557,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }</code></pre>
 <p><img src="img/05.png" alt=""></p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="05">
-              <h1>Location Model</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Location Model</h1>
 <p>We would like to include the location into our model, so we can record the latitude/longitude the user selects. Introduce this new class alongside the PlacemarkModel class:</p>
 <h2>PlacemarkModel</h2>
 <pre><code>@Parcelize
@@ -645,10 +652,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }
 }</code></pre>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="06">
-              <h1>Recover Location from Activity</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>Recover Location from Activity</h1>
 <p>Currently, when you press back from the MapsActivity, any change made in the marker by the user is lost. We need to address this now.</p>
 <p>First, add these fields to the ActivityPlacemark class:</p>
 <h2>PlacemarkActivity</h2>
@@ -680,10 +687,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 <p>When you press back - and you get to the PlacemarkActivity - try pressing Set Location again. What happens? It still doesn&#39;t seem to remember the new location.</p>
 <p>Introduce some logging statements to see what is happening. We will fix this in the next step.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="07">
-              <h2>Listening for Marker Drag Events</h2>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h2>Listening for Marker Drag Events</h2>
 <p>To get this to work, we need further capabilities in MapsActivity.</p>
 <p>First, implement a new interface:</p>
 <h2>MapsActivity</h2>
@@ -717,10 +724,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }</code></pre>
 <p>Try this now - and verify that if you change the location - and then immediately press back and then renter the map again. The location should be remembered, and the map centred to the new location.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Exercises">
-              <h1>Solution</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercises">
+          <h1>Solution</h1>
 <p>Placemark application so far:</p>
 <ul>
 <li><a href="archives/placemark-05.zip">placemark-05.zip</a></li>
@@ -744,28 +751,34 @@ data class PlacemarkModel(var id: Long = 0,
                           var zoom: Float = 0f) : Parcelable</code></pre>
 <p>... and then manage these accordingly.</p>
 
-            </div>
-          
         </div>
-      </div>
+      
     </div>
+  </div>
+</div>
 
-    <script>
-      $(document).ready(function() {
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
-      divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
-    }
-  });
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
 });
 
-      $(document).ready(function() {
+  $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -798,6 +811,6 @@ data class PlacemarkModel(var id: Long = 0,
     .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
