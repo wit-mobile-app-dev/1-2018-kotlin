@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    
+      <a href="../../index.html"> Firebase Authentication  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-10 Firebase Auth">
+        Lab-10 Firebase Auth
+      </a>
+    
+      <a class="item" data-tab="Solutions">
+        Solutions
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="08">
+        08
+      </a>
+    
+      <a class="item" data-tab="Exercises">
+        Exercises
+      </a>
+    
+  </div>
+</div>
+
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-00-overview/book-00-studio/index.html">Lab-00 Studio </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-01-activity/unit-01b-android-activitiy/book-01-activity/index.html">Lab-01 Activities </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-02-adapters/unit-02b-android-adapters/book-02-adapters/index.html">Lab-02 Adapters </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-03-models/unit-03b-android-models/book-03-models/index.html">Lab-03 Models </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-04-images/unit-04b-images/book-04-images/index.html">Lab-04 Images </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-05-map-activity/unit-05b-map-activity/book-maps/index.html">Lab-05 MapActivity </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-06-persistence/unit-06b-json/book-json/index.html">Lab-06 JSON </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-07-layouts/unit-07b-map-view/book-0-map-view/index.html">Lab-07 MapView </a>
+      
+    
+      
+        <a class="item"
+           href="https://wit-mobile-app-dev.github.io/1-2018-kotlin//topic-12-firebase/unit-10b-firebase-auth/book/index.html">Lab-10 Firebase Auth </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-10 Firebase Auth">
+          <h1>Objectives</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Solutions">
+          <h1>Exercise Solutions</h1>
+<h2>Exercise 1:</h2>
+<p>Although the locations is being tracked, the map view is not displaying the location correctly (it still renders the default location). See if you can fix this.</p>
+<h3>Solution</h3>
+<h2>PlacemarkActivity</h2>
+<p>Minor revision to the location callback:</p>
+<pre><code>  var locationCallback = object : LocationCallback() {
+    override fun onLocationResult(locationResult: LocationResult?) {
+      if (locationResult != null &amp;&amp; locationResult.locations != null) {
+        val l = locationResult.locations.last()
+        info (&quot;Location Update ${l.latitude} ${l.longitude}&quot;)
+        lat.setText(l.latitude.toString())
+        lng.setText(l.longitude.toString())
+        placemark.lat = l.latitude
+        placemark.lng = l.longitude
+        configureMap()
+      }
+    }</code></pre>
+<h2>Exercise 2:</h2>
+<p>Change the behaviour of the PlacemarkActivity view when an existing placemark is edited. In this mode, the application should display the latitude/longitude - but not track the location.</p>
+<h2>Solution</h2>
+<p>Display the placemarks lat/lng when the activity is opened:</p>
+<h2>PlacemarkActivity</h2>
+<pre><code>    if (intent.hasExtra(&quot;placemark_edit&quot;)) {
+      edit = true
+      placemark = intent.extras.getParcelable&lt;PlacemarkModel&gt;(&quot;placemark_edit&quot;)
+      placemarkTitle.setText(placemark.title)
+      description.setText(placemark.description)
+      lat.setText(placemark.lat.toString())
+      lng.setText(placemark.lng.toString())
+      placemarkImage.setImageBitmap(readImageFromPath(this, placemark.image))
+      if (placemark.image != null) {
+        chooseImage.setText(R.string.change_placemark_image)
+      }
+    } else {
+      placemark.lat = defaultLocation.lat
+      placemark.lng = defaultLocation.lng
+      placemark.zoom = defaultLocation.zoom
+    }</code></pre>
+<p>In onResume, we only track location if not in edit more:</p>
+<pre><code>  override fun onResume() {
+    super.onResume()
+    mapView.onResume()
+    if (!edit) {
+      startLocationUpdates()
+    }
+  }</code></pre>
+<h2>Exercise 3:</h2>
+<p>Augment the full screen map view with zoom controls.</p>
+<h2>MapsActivity</h2>
+<p>Just one extra line in onMapReady:</p>
+<pre><code>  override fun onMapReady(googleMap: GoogleMap) {
+    map = googleMap
+    map.setOnMarkerDragListener(this)
+    map.setOnMarkerClickListener(this)
+    val loc = LatLng(location.lat, location.lng)
+    val options = MarkerOptions()
+        .title(&quot;Placemark&quot;)
+        .snippet(&quot;GPS : &quot; + loc.toString())
+        .draggable(true)
+        .position(loc)
+    map.addMarker(options)
+    map.uiSettings.setZoomControlsEnabled(true)
+    map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, location.zoom))
+  }</code></pre>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Login Layout</h1>
+<p>We would like to introduce a new Login screen - which will be presented before any user logs in:</p>
+<p><img src="img/01x.png" alt=""></p>
+<p>Our first version will just let the user signup/login without paying any attention to what the enter as credentials.</p>
+<p>Here is a set of new strings for the layout:</p>
+<h2>res/values/strings.xml</h2>
+<pre><code>  &lt;string name=&quot;sign_up&quot;&gt;Sign Up&lt;/string&gt;
+  &lt;string name=&quot;sign_in&quot;&gt;Sign In&lt;/string&gt;
+  &lt;string name=&quot;hint_password&quot;&gt;password&lt;/string&gt;
+  &lt;string name=&quot;hint_email&quot;&gt;email&lt;/string&gt;</code></pre>
+<p>This is the login layout:</p>
+<h2>res/layout/activity_login.xml</h2>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+  xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+  android:layout_width=&quot;match_parent&quot;
+  android:layout_height=&quot;match_parent&quot;
+  tools:context=&quot;org.wit.placemark.activities.LoginActivity&quot;&gt;
+
+
+  &lt;LinearLayout
+    android:id=&quot;@+id/layout_email_password&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:layout_alignParentTop=&quot;true&quot;
+    android:layout_centerHorizontal=&quot;true&quot;
+    android:layout_marginTop=&quot;28dp&quot;
+    android:orientation=&quot;horizontal&quot;&gt;
+
+    &lt;EditText
+      android:id=&quot;@+id/field_email&quot;
+      android:layout_width=&quot;150dp&quot;
+      android:layout_height=&quot;wrap_content&quot;
+      android:ellipsize=&quot;end&quot;
+      android:gravity=&quot;center_horizontal&quot;
+      android:hint=&quot;@string/hint_email&quot;
+      android:inputType=&quot;textEmailAddress&quot;
+      android:maxLines=&quot;1&quot; /&gt;
+
+    &lt;EditText
+      android:id=&quot;@+id/field_password&quot;
+      android:layout_width=&quot;150dp&quot;
+      android:layout_height=&quot;wrap_content&quot;
+      android:ellipsize=&quot;end&quot;
+      android:gravity=&quot;center_horizontal&quot;
+      android:hint=&quot;@string/hint_password&quot;
+      android:inputType=&quot;textPassword&quot;
+      android:maxLines=&quot;1&quot; /&gt;
+
+  &lt;/LinearLayout&gt;
+
+  &lt;LinearLayout
+    android:id=&quot;@+id/layout_buttons&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:layout_alignParentTop=&quot;true&quot;
+    android:layout_centerHorizontal=&quot;true&quot;
+    android:layout_marginTop=&quot;85dp&quot;
+    android:orientation=&quot;horizontal&quot;&gt;
+
+    &lt;Button
+      android:id=&quot;@+id/signInBtn&quot;
+      android:layout_width=&quot;150dp&quot;
+      android:layout_height=&quot;wrap_content&quot;
+      android:text=&quot;@string/sign_in&quot; /&gt;
+
+
+    &lt;Button
+      android:id=&quot;@+id/signUpBtn&quot;
+      android:layout_width=&quot;150dp&quot;
+      android:layout_height=&quot;wrap_content&quot;
+      android:text=&quot;@string/sign_up&quot; /&gt;
+
+  &lt;/LinearLayout&gt;
+
+
+&lt;/RelativeLayout&gt;</code></pre>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Login Activity</h1>
+<p>This is the activity class - which we can put alongside the other activities:</p>
+<h2>LoginActivity</h2>
+<pre><code>package org.wit.placemark.activities
+
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.intentFor
+import org.wit.placemark.R
+
+class LoginActivity : AppCompatActivity(), AnkoLogger {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_login)
+
+    signUpBtn.setOnClickListener {
+      startActivity(intentFor&lt;PlacemarkListActivity&gt;())
+    }
+
+    signInBtn.setOnClickListener {
+      startActivity(intentFor&lt;PlacemarkListActivity&gt;())
+    }
+  }
+}</code></pre>
+<p>In the above, note that we just start the PlacemarkListActivity, regardless of which button is pressed - or what is entered.</p>
+<p>The manifest needs to be altered to now nominate this activity as the <code>launch</code> activity:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+  package=&quot;org.wit.placemark&quot;&gt;
+
+  &lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&gt;
+
+  &lt;application
+    android:name=&quot;.main.MainApp&quot;
+    android:allowBackup=&quot;true&quot;
+    android:icon=&quot;@mipmap/ic_launcher&quot;
+    android:label=&quot;@string/app_name&quot;
+    android:roundIcon=&quot;@mipmap/ic_launcher_round&quot;
+    android:supportsRtl=&quot;true&quot;
+    android:theme=&quot;@style/AppTheme&quot;&gt;
+    &lt;activity android:name=&quot;.activities.LoginActivity&quot;&gt;
+      &lt;intent-filter&gt;
+        &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;
+        &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+      &lt;/intent-filter&gt;
+    &lt;/activity&gt;
+
+    &lt;activity android:name=&quot;.activities.PlacemarkActivity&quot;&gt;&lt;/activity&gt;
+    &lt;activity android:name=&quot;.activities.PlacemarkListActivity&quot;&gt;
+    &lt;/activity&gt;
+
+    &lt;meta-data
+      android:name=&quot;com.google.android.geo.API_KEY&quot;
+      android:value=&quot;@string/google_maps_key&quot; /&gt;
+
+    &lt;activity
+      android:name=&quot;.activities.MapsActivity&quot;
+      android:label=&quot;@string/title_activity_maps&quot;&gt;
+      &lt;meta-data
+        android:name=&quot;android.support.PARENT_ACTIVITY&quot;
+        android:value=&quot;org.wit.placemark.activities.PlacemarkActivity&quot; /&gt;
+    &lt;/activity&gt;
+    &lt;activity
+      android:name=&quot;.activities.PlacemarkMapsActivity&quot;
+      android:label=&quot;@string/title_activity_placemark_maps&quot;
+      android:theme=&quot;@style/AppTheme&quot;&gt;&lt;/activity&gt;
+  &lt;/application&gt;
+
+&lt;/manifest&gt;</code></pre>
+<p>Run the app now - it should display the login activity first, and take you to the placemark list when you press either button.</p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Logout</h1>
+<p>As we now support log in - we also need to support logout. This will require a change to our existing menus in PlacemarkActivity</p>
+<p>First, some new/revised strings:</p>
+<h2>res/values/strings.xml</h2>
+<pre><code>  &lt;string name=&quot;menu_addPlacemark&quot;&gt;Add Placemark&lt;/string&gt;
+  &lt;string name=&quot;menu_showMap&quot;&gt;Show Map&lt;/string&gt;
+  &lt;string name=&quot;menu_logout&quot;&gt;Logout&lt;/string&gt;</code></pre>
+<p>The main menu must now be restructured as follows:</p>
+<h2>res/menu/main_menu.xml</h2>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+      xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&gt;
+
+  &lt;item
+    android:id=&quot;@+id/item_add&quot;
+    android:icon=&quot;@android:drawable/ic_menu_add&quot;
+    android:title=&quot;@string/menu_addPlacemark&quot;
+    app:showAsAction=&quot;never&quot;/&gt;
+
+  &lt;item
+      android:id=&quot;@+id/item_map&quot;
+      android:icon=&quot;@android:drawable/ic_menu_mapmode&quot;
+      android:title=&quot;@string/menu_showMap&quot;
+      app:showAsAction=&quot;never&quot;/&gt;
+
+  &lt;item
+      android:id=&quot;@+id/item_logout&quot;
+      android:title=&quot;@string/menu_logout&quot;
+      android:visible=&quot;true&quot;
+      app:showAsAction=&quot;never&quot; /&gt;
+&lt;/menu&gt;</code></pre>
+<p>Finally - we need to be able to handle the new logout menu option. This is an extend version of the menu handler in PlacemarkListActivity</p>
+<pre><code>  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    when (item?.itemId) {
+      R.id.item_add -&gt; startActivityForResult&lt;PlacemarkActivity&gt;(200)
+      R.id.item_map -&gt; startActivity&lt;PlacemarkMapsActivity&gt;()
+      R.id.item_logout -&gt; startActivity&lt;LoginActivity&gt;()
+    }
+    return super.onOptionsItemSelected(item)
+  }</code></pre>
+<p>Notice we are just switching to the login screen when logout is selected.</p>
+<p>The menu now appears as a drop down, instead of a list of icons:</p>
+<p><img src="img/02x.png" alt=""></p>
+<p>Try this now, and make sure it logs out as expected</p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Firebase</h1>
+<p>Visit Firebase and create / log in to your account:</p>
+<ul>
+<li><a href="https://firebase.google.com/">https://firebase.google.com/</a></li>
+</ul>
+<p>Create a new Firebase Project:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>Give the project a name:</p>
+<p><img src="img/02.png" alt=""></p>
+<p>Once the app is created - you should see the application console:</p>
+<p><img src="img/03.png" alt=""></p>
+<p>Select the <code>Authentication</code> panel - </p>
+<p><img src="img/04.png" alt=""></p>
+<p>In the next screen - and enable <code>Email/Password</code>:</p>
+<p><img src="img/05.png" alt=""></p>
+<p>Your Authentication methods should look like this:</p>
+<p><img src="img/06.png" alt=""></p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>Connect the App</h1>
+<p>Back in Android Studio, select <code>Tools-&gt;Firebase</code> - you should see the Firebase Assistant:</p>
+<p><img src="img/07.png" alt=""></p>
+<p>Select <code>Authentication</code>:</p>
+<p><img src="img/08.png" alt=""></p>
+<p>... and then select <code>Email and password authentication</code>:</p>
+<p><img src="img/09.png" alt=""></p>
+<p>Now press <code>Connect to Firebase</code></p>
+<p>This may require you to authenticate to firebase with your account. Once connected, you should see your firebase created app:</p>
+<p><img src="img/10.png" alt=""></p>
+<p>Select the app and press <code>Connect to Firebase</code></p>
+<p>This will insert a new file into your project called <code>google-services.json</code>. This file is embedded in the <code>app</code> folder. You will need to switch to the <code>Project</code> perspective in Studio in order to see it.</p>
+<p>The assistant will also insert additional entries into your gradle files. As we are managing our gradle a little differently - we will take control of this ourselves. </p>
+<p>This is a revised version of the base gradle file:</p>
+<h2>project gradle</h2>
+<pre><code>buildscript {
+  ext.kotlin_version = &#39;1.2.31&#39;
+  ext.gradle_version = &#39;3.1.0&#39;
+  ext.google_services_version = &#39;3.1.1&#39;
+
+  ext.app_compat_version = &#39;26.1.0&#39;
+  ext.design_library_version = &#39;26.1.0&#39;
+  ext.support_library_version = &#39;26.1.0&#39;
+  ext.cardview_library_version = &#39;26.1.0&#39;
+  ext.constraint_layout_version = &#39;1.0.2&#39;
+
+  ext.anko_version = &#39;0.10.4&#39;
+  ext.anko_commons_version = &#39;0.10.4&#39;
+
+  ext.play_services_maps_version = &#39;12.0.1&#39;
+  ext.play_services_location_version = &#39;12.0.1&#39;
+  ext.firebase_version = &#39;12.0.1&#39;
+
+  ext.room_version = &#39;1.0.0&#39;
+
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath &#39;com.android.tools.build:gradle:3.1.1&#39;
+    classpath &quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;
+    classpath &quot;com.google.gms:google-services:$google_services_version&quot;
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}</code></pre>
+<p>The changes here are a new classpath entry - and also new version firebase:</p>
+<pre><code>  ext.firebase_version = &#39;12.0.1&#39;</code></pre>
+<p>This is the revised module grade:</p>
+<h2>module gradle:</h2>
+<pre><code>apply plugin: &#39;com.android.application&#39;
+apply plugin: &#39;kotlin-android&#39;
+apply plugin: &#39;kotlin-android-extensions&#39;
+apply plugin: &quot;kotlin-kapt&quot;
+
+android {
+  compileSdkVersion 26
+  defaultConfig {
+    applicationId &quot;org.wit.placemark&quot;
+    minSdkVersion 23
+    targetSdkVersion 26
+    versionCode 1
+    versionName &quot;1.0&quot;
+    testInstrumentationRunner &quot;android.support.test.runner.AndroidJUnitRunner&quot;
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39;
+    }
+  }
+}
+
+androidExtensions {
+  experimental = true
+}
+
+dependencies {
+  implementation fileTree(dir: &#39;libs&#39;, include: [&#39;*.jar&#39;])
+  implementation &quot;org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version&quot;
+
+  implementation &quot;com.android.support:appcompat-v7:$app_compat_version&quot;
+  implementation &quot;com.android.support.constraint:constraint-layout:$constraint_layout_version&quot;
+  implementation &quot;com.android.support:design:$design_library_version&quot;
+  implementation &quot;com.android.support:cardview-v7:$cardview_library_version&quot;
+
+  implementation &quot;org.jetbrains.anko:anko:$anko_version&quot;
+  implementation &quot;org.jetbrains.anko:anko-commons:$anko_commons_version&quot;
+
+  implementation &quot;com.google.android.gms:play-services-maps:$play_services_maps_version&quot;
+  implementation &quot;com.google.android.gms:play-services-location:$play_services_location_version&quot;
+
+  implementation &quot;android.arch.persistence.room:runtime:$room_version&quot;
+  implementation &quot;com.google.firebase:firebase-auth:$firebase_version&quot;
+  implementation &quot;com.google.firebase:firebase-database:$firebase_version&quot;
+
+  annotationProcessor &quot;android.arch.persistence.room:compiler:$room_version&quot;
+  kapt &quot;android.arch.persistence.room:compiler:$room_version&quot;
+
+  testImplementation &#39;junit:junit:4.12&#39;
+  androidTestImplementation &#39;com.android.support.test:runner:1.0.1&#39;
+  androidTestImplementation &#39;com.android.support.test.espresso:espresso-core:3.0.1&#39;
+}
+
+apply plugin: &#39;com.google.gms.google-services&#39;</code></pre>
+<p>This include some additional firebase libraries:</p>
+<pre><code>  implementation &quot;com.google.firebase:firebase-auth:$firebase_version&quot;
+  implementation &quot;com.google.firebase:firebase-database:$firebase_version&quot;</code></pre>
+<p>And also a new plugin:</p>
+<pre><code>apply plugin: &#39;com.google.gms.google-services&#39;</code></pre>
+<p>Rebuild the application now to make sure all of these libraries can be incorporated correctly.</p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h1>Signup</h1>
+<p>Back in the LoginActivity class - introduce a new auth field to allow us to access the firebase Authentication service:</p>
+<h2>LoginActivity</h2>
+<pre><code>  lateinit var auth: FirebaseAuth</code></pre>
+<p>Initialize this in <code>onCreate</code></p>
+<pre><code>    auth = FirebaseAuth.getInstance()</code></pre>
+<p>Make sure the above builds without errors now.</p>
+<p>Revise the signup event handler now:</p>
+<pre><code>    signUpBtn.setOnClickListener {
+      val email = field_email.text.toString()
+      val password = field_password.text.toString()
+      if (email == &quot;&quot; || password == &quot;&quot;) {
+        toast(&quot;Please provide email + password&quot;)
+      }
+      else {
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task -&gt;
+          if (task.isSuccessful) {
+            info(&quot;Login success&quot;)
+            startActivity(intentFor&lt;PlacemarkListActivity&gt;())
+          }
+          else {
+            toast(&quot;Sign Up Failed: ${task.exception?.message}&quot;)
+          }
+        }
+      }
+    }</code></pre>
+<p>This will sign up a new user with the Firebase service. Try it now </p>
+<p><img src="img/11.png" alt=""></p>
+<p>Make sure to enter a correctly formed email + a password of at least 8 characters.</p>
+<p>The application should take you to the main Placemarks screen.</p>
+<p>Back in the Firebase console - check the authentication panel to see if the new user is recorded:</p>
+<p><img src="img/12.png" alt=""></p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="08">
+          <h1>Login + Logout</h1>
+<p>Now implement the login event:</p>
+<pre><code>    signInBtn.setOnClickListener {
+      val email = field_email.text.toString()
+      val password = field_password.text.toString()
+      if (email == &quot;&quot; || password == &quot;&quot;) {
+        toast(&quot;Please provide email + password&quot;)
+      }
+      else {
+        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task -&gt;
+          if (task.isSuccessful) {
+            startActivity(intentFor&lt;PlacemarkListActivity&gt;())
+          }
+          else {
+            toast(&quot;Sign In Failed&quot;)
+          }
+        }
+      }
+    }
+  }</code></pre>
+<p> Test this now - make sure you can only log in when a user is correctly registered. Also try different credentials, and get familiar will all of the potential error messages.</p>
+<p> To logout, we need an additional step to clear the logged in status:</p>
+<h2>PlacemarkListActivity</h2>
+<pre><code>   override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    when (item?.itemId) {
+      R.id.item_add -&gt; startActivityForResult&lt;PlacemarkActivity&gt;(200)
+      R.id.item_map -&gt; startActivity&lt;PlacemarkMapsActivity&gt;()
+      R.id.item_logout -&gt; {
+        FirebaseAuth.getInstance().signOut()
+        startActivity&lt;LoginActivity&gt;()
+      }
+    }
+    return super.onOptionsItemSelected(item)
+  }</code></pre>
+<p> The extra statement here:</p>
+<pre><code class="lang-java">         FirebaseAuth.getInstance().signOut()</code></pre>
+<p> This clears the status before displaying the login screen.</p>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercises">
+          <h1>Solution</h1>
+<p>Placemark application so far:</p>
+<ul>
+<li><a href="archives/archive.zip">archive.zip</a></li>
+</ul>
+<h2>Exercise 1</h2>
+<p>Adjust the title of the PlacemarkListActivity - such that it displays the logged in users email:</p>
+<p><img src="img/13.png" alt=""></p>
+<p>The logged in user details are reasonably easy to locate:</p>
+<ul>
+<li><a href="https://firebase.google.com/docs/auth/web/manage-users">https://firebase.google.com/docs/auth/web/manage-users</a></li>
+</ul>
+<p>Here is how we could access this in kotlin:</p>
+<pre><code>    val user = FirebaseAuth.getInstance().currentUser
+    var appTitle = &quot;${title.toString()}: ${user!!.email}&quot;</code></pre>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+</script>
+</body>
+</html>
