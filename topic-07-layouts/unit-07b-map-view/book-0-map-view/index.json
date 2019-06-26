@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-07 MapView",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Display all placemarks on a map in a new activity</p>",
+  "folder" : "book-0-map-view",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

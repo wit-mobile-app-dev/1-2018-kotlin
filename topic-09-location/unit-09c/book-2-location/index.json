@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-09b Tracking",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Extend the location facility to track location in real time.</p>",
+  "folder" : "book-2-location",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-04 Images",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Allow an image to be selected from the phones photos, and stored with the placemark</p>",
+  "folder" : "book-04-images",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

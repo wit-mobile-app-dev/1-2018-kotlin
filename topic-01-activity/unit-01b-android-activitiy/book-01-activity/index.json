@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-01 Activities",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Layout the PlacemarkActivity - supporting create/edit of placemarks</p>",
+  "folder" : "book-01-activity",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

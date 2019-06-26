@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-05 MapActivity",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Include a MapActivity, enabling the user to select the location of the placemark</p>",
+  "folder" : "book-maps",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

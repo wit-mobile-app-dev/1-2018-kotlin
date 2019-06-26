@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-11a Firebase Auth",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Authenticate users against the Firebase Authentication service</p>",
+  "folder" : "book",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-08b MVP II",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Complete the presenter pattern implementation, introducing BaseView &amp; BasePresenter classes</p>",
+  "folder" : "book-2-mvp-2",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-03 Models",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Application object + Model classes to manage placemarks.</p>",
+  "folder" : "book-03-models",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

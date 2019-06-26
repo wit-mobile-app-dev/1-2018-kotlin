@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-11c Firebase Storage",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Store images in Firebase Storage</p>",
+  "folder" : "book",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

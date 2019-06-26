@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-11b Firebase Database",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Store placemarks in Firebase Realtime Database</p>",
+  "folder" : "book",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

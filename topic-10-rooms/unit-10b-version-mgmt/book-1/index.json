@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-10a AndroidX",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Migrate to AndroidX + manage library versions more optimally</p>",
+  "folder" : "book-1",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

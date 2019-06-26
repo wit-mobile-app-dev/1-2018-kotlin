@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-10b Rooms",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Introduce a new PlacemarkStore implementation to persist to an SQLite database</p>",
+  "folder" : "book-1",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

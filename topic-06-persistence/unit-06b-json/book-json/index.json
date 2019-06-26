@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-06 JSON",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>Save and restore placemarks from a JSON formatted file</p>",
+  "folder" : "book-json",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

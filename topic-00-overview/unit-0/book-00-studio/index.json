@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-00 Studio",
+  "img" : "img/main.jpg",
+  "videoid" : "none",
+  "objectives" : "<p>Download and configure Android Studio. Generate and run a sample application.</p>",
+  "folder" : "book-00-studio",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {

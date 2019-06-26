@@ -1,6 +1,21 @@
 
+
+
   {
+  
+  
+    "properties" : {},
+  
   "type" : "lab",
+  "title" : "Lab-09a Location",
+  "img" : "img/main.png",
+  "videoid" : "none",
+  "objectives" : "<p>When creating a new placemark, use the current location as the starting point.</p>",
+  "folder" : "book-1-location",
+  "link" : "index.html",
+  "los": [
+   ]
+,
   "chapters" : [
   
     {
