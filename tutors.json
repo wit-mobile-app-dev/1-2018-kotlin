@@ -1,0 +1,2824 @@
+
+
+
+
+
+
+
+
+
+
+
+  {
+  
+  
+  
+    "properties" : {"highlightstyle":"railscasts","credits":"Eamonn de Leastar, WIT","courseurl":"https://wit-mobile-app-dev.github.io/1-2018-kotlin/","slack":"https://wit-mobile-2018.slack.com/messages/CCR8K54J3","moodle":"https://moodle.wit.ie/course/view.php?id=126320&section=3","license":"Unless otherwise stated, this work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>.","basecourseurl":"wit-mobile-app-dev.github.io/1-2018-kotlin/"}
+  
+,
+  "type" : "course",
+  "title" : "Android Programming with Kotlin ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin//",
+  
+  
+
+  "summary" : "",
+  "id": "mobile-app-dev-1-2018",
+  
+    "route" : "#course/wit-mobile-app-dev.github.io/1-2018-kotlin/"
+  
+,
+  "los" : [  {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "00: Overview ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/topic.jpg",
+  
+  
+
+  "summary" : "Overview of the module + assignment specifications.",
+  "id": "topic-00-overview",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Overview ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/talk-0-overview/talk.png",
+  
+  
+
+  "summary" : "Overview",
+  "id": "unit-0",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Module Overview ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/talk-0-overview/talk.png",
+  
+  
+
+  "summary" : "",
+  "id": "talk-0-overview",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/talk-0-overview/talk.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/talk-0-overview/talk.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-00 Studio",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/book-00-studio/img/main.jpg",
+  
+  
+
+  "summary" : "Download and configure Android Studio. Generate and run a sample application.",
+  "id": "book-00-studio",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-0/book-00-studio"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Assignment 1 ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-1/talk-project-1/project-1.jpg",
+  
+  
+
+  "summary" : "",
+  "id": "unit-1",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-1"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Archaeological Fieldwork : Part I ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-1/talk-project-1/project-1.jpg",
+  
+  
+
+  "summary" : "Specification, grading guidelines and schedule for Assignment 1",
+  "id": "talk-project-1",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-1/talk-project-1/project-1.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-1/talk-project-1/project-1.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Assignment 2 ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/talk-project-2/project-2.jpg",
+  
+  
+
+  "summary" : "",
+  "id": "unit-2",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Archaeological Fieldwork : Part II ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/talk-project-2/project-2.jpg",
+  
+  
+
+  "summary" : "Specification, grading guidelines and schedule for Assignment 2",
+  "id": "talk-project-2",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/talk-project-2/project-2.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/talk-project-2/project-2.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "archive",
+  "title" : "Project Submission Template ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/archive/template.docx.png",
+  
+  
+
+  "summary" : "An archive of a word document to be submitted with assignment 2",
+  "id": "archive",
+  
+    "route" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/archive/template.docx.zip"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "web",
+  "title" : "Assignment 2 Submission ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-00-overview/unit-2/web/web.jpg",
+  
+  
+
+  "summary" : "Moodle assignment submission for Assignment 2",
+  "id": "web",
+  
+    "route" : "https://moodle.wit.ie/mod/assign/view.php?id=2713181"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "01: Activities ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/topic.png",
+  
+  
+
+  "summary" : "Trace the influences on the Kotlin Programming language. Create and explore a starter Kotlin Android application in detail.",
+  "id": "topic-01-activity",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Context ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-1-evolution/c-programming-languages.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-01a-kotlin-context",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Evolution ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-1-evolution/c-programming-languages.png",
+  
+  
+
+  "summary" : "Programming language heritage, characteristics & type systems",
+  "id": "talk-1-evolution",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-1-evolution/c-programming-languages.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-1-evolution/c-programming-languages.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Convergence ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-2-convergence/d-programming-example.png",
+  
+  
+
+  "summary" : "A simple algorithm expressed in Java, Groovy, Swift and Kotlin",
+  "id": "talk-2-convergence",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-2-convergence/d-programming-example.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01a-kotlin-context/talk-2-convergence/d-programming-example.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Android Activities ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/talk-01-foundation/01-foundation.jpg",
+  
+  
+
+  "summary" : "",
+  "id": "unit-01b-android-activitiy",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Android: Foundation ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/talk-01-foundation/01-foundation.jpg",
+  
+  
+
+  "summary" : "A first look at the structure of an Android application a Kotlin activity.",
+  "id": "talk-01-foundation",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/talk-01-foundation/01-foundation.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/talk-01-foundation/01-foundation.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-01 Activities",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/book-01-activity/img/main.png",
+  
+  
+
+  "summary" : "Layout the PlacemarkActivity - supporting create/edit of placemarks",
+  "id": "book-01-activity",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-01-activity/unit-01b-android-activitiy/book-01-activity"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "02: Adapters ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/topic.png",
+  
+  
+
+  "summary" : "Look at Kotlin in more depth. Deep dive into some of its features. Extend the app to manage lists of placemarks using the adapter pattern.",
+  "id": "topic-02-adapters",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Fundamentals ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-1-origins/kotlin-origins.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-02a-kotlin-basics",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Kotlin Structure ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-1-origins/kotlin-origins.png",
+  
+  
+
+  "summary" : "The fundamental characteristics of the language",
+  "id": "talk-1-origins",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-1-origins/kotlin-origins.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-1-origins/kotlin-origins.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Basic Syntax ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-2-basic-syntax/01-basic-syntax.jpg",
+  
+  
+
+  "summary" : "Rapid tour of the basic syntax of Kotlin",
+  "id": "talk-2-basic-syntax",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-2-basic-syntax/01-basic-syntax.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-2-basic-syntax/01-basic-syntax.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Kotlin Deep Dive ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-3-deep-dive/deep-dive.png",
+  
+  
+
+  "summary" : "A deep dive into some key Kotlin features: Data Classes & Lambdas",
+  "id": "talk-3-deep-dive",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-3-deep-dive/deep-dive.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02a-kotlin-basics/talk-3-deep-dive/deep-dive.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Android Adapters ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-01-app-objects/app-object.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-02b-android-adapters",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Android Application Object ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-01-app-objects/app-object.png",
+  
+  
+
+  "summary" : "This class enables a global application object to be defined, accessible from all activities",
+  "id": "talk-01-app-objects",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-01-app-objects/app-object.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-01-app-objects/app-object.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Recycler View + Adapters ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-02-adapters/adapter.png",
+  
+  
+
+  "summary" : "Managing lists is facilitated by the RecyclerView + Adapters - 2 key patterns in Android development",
+  "id": "talk-02-adapters",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-02-adapters/adapter.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/talk-02-adapters/adapter.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-02 Adapters",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/book-02-adapters/img/main.png",
+  
+  
+
+  "summary" : "Introduce new activity to display a list of placemarks. Support adding to this list.",
+  "id": "book-02-adapters",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-02-adapters/unit-02b-android-adapters/book-02-adapters"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "03: Models ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/topic.png",
+  
+  
+
+  "summary" : "Examine key Kotlin Idioms. Start comparing simple Java & Kotlin statements. Introduce a more complete model into Placemark.",
+  "id": "topic-03-models",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Idioms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-1-idioms/02-idioms.jpg",
+  
+  
+
+  "summary" : "Kotlin Idioms",
+  "id": "unit-03a-kotlin-idioms",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Idioms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-1-idioms/02-idioms.jpg",
+  
+  
+
+  "summary" : "A tour of the common idioms in Kotlin",
+  "id": "talk-1-idioms",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-1-idioms/02-idioms.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-1-idioms/02-idioms.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "J2K Variables & Expressions ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-2-j2k-variables/a-J2k-variables.jpg",
+  
+  
+
+  "summary" : "Snippets of the same code in Java & Kotlin",
+  "id": "talk-2-j2k-variables",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-2-j2k-variables/a-J2k-variables.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03a-kotlin-idioms/talk-2-j2k-variables/a-J2k-variables.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Android Models ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-01-toolbar/toolbar.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-03b-android-models",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Toolbar ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-01-toolbar/toolbar.png",
+  
+  
+
+  "summary" : "The Android Support Library implements AppCompatActivity + a range of general purpose components, including a ToolBar",
+  "id": "talk-01-toolbar",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-01-toolbar/toolbar.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-01-toolbar/toolbar.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Memory Store ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-02-store/store.jpg",
+  
+  
+
+  "summary" : "Abstract the Placemarks data structure into PlacemarkStore interface + in-memory implementation.",
+  "id": "talk-02-store",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-02-store/store.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-02-store/store.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Adapter + Listener ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-03-adapter-listeners/adapter-listener.png",
+  
+  
+
+  "summary" : "Equip the Adapter with a Listener interface. Use this interface to communicate from the adapter to the host Activity",
+  "id": "talk-03-adapter-listeners",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-03-adapter-listeners/adapter-listener.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-03-adapter-listeners/adapter-listener.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Parcelable ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-04-parcelable/parcelable.jpg",
+  
+  
+
+  "summary" : "Encapsulate model data for transmission between Activities",
+  "id": "talk-04-parcelable",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-04-parcelable/parcelable.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/talk-04-parcelable/parcelable.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-03 Models",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/book-03-models/img/main.jpg",
+  
+  
+
+  "summary" : "Application object + Model classes to manage placemarks.",
+  "id": "book-03-models",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-03-models/unit-03b-android-models/book-03-models"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "04: Images ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/topic.png",
+  
+  
+
+  "summary" : "A more detailed look at the fundamental types in Kotlin. How to manage images in android, including selecting and displaying images from the phone gallery.",
+  "id": "topic-04-images",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Deep Dive ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-1-kotlin-types/types.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-04a-kotlin-types-and-packages",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Types ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-1-kotlin-types/types.png",
+  
+  
+
+  "summary" : "Summary of the basic types in the Kotlin programming language",
+  "id": "talk-1-kotlin-types",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-1-kotlin-types/types.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-1-kotlin-types/types.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "J2K Collections ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-2-j2k-collections/d-j2k-collections.jpg",
+  
+  
+
+  "summary" : "Collection examples: Java & Kotlin equivalents",
+  "id": "talk-2-j2k-collections",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-2-j2k-collections/d-j2k-collections.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04a-kotlin-types-and-packages/talk-2-j2k-collections/d-j2k-collections.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Images  ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-00-android-platform/android-platform.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-04b-images",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Android Platform, Components & Activities ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-00-android-platform/android-platform.png",
+  
+  
+
+  "summary" : "Key features of the platform, the principle components + the activity model",
+  "id": "talk-00-android-platform",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-00-android-platform/android-platform.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-00-android-platform/android-platform.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Resources ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-01-resources/resources.png",
+  
+  
+
+  "summary" : "A general term for all layout, strings, bitmaps and other XML artefacts in an Android Project",
+  "id": "talk-01-resources",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-01-resources/resources.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-01-resources/resources.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Model Updates ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-02-model-updates/model-updates.png",
+  
+  
+
+  "summary" : "Creating and updating a Placemark. Updating the placemark list.",
+  "id": "talk-02-model-updates",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-02-model-updates/model-updates.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-02-model-updates/model-updates.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Images ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-03-android-images/android-images.png",
+  
+  
+
+  "summary" : "Support selecting image from phone gallery, and then displaying them in an activity.",
+  "id": "talk-03-android-images",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-03-android-images/android-images.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/talk-03-android-images/android-images.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-04 Images",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/book-04-images/img/main.jpg",
+  
+  
+
+  "summary" : "Allow an image to be selected from the phones photos, and stored with the placemark",
+  "id": "book-04-images",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-04-images/unit-04b-images/book-04-images"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "05: Maps ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/topic.png",
+  
+  
+
+  "summary" : "Review Kotlin Packages + Control flow. Introducing Google Maps into and android app.",
+  "id": "topic-05-map-activity",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Packages & Control Flow ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-01-kotlin-packages/packages.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-05a-kotlin-packages-and-control-flow",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Kotlin Packages ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-01-kotlin-packages/packages.png",
+  
+  
+
+  "summary" : "Source files start with a package declaration. This can be used to access (import) features from the source file.",
+  "id": "talk-01-kotlin-packages",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-01-kotlin-packages/packages.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-01-kotlin-packages/packages.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Kotlin Control Flow ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-02-kotlin-control-flow/control-flow-and-ranges.png",
+  
+  
+
+  "summary" : "if, when, for and while statements",
+  "id": "talk-02-kotlin-control-flow",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-02-kotlin-control-flow/control-flow-and-ranges.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-02-kotlin-control-flow/control-flow-and-ranges.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "J2K Control Flow ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-3-j2k-control/b-j2k-control-structures.png",
+  
+  
+
+  "summary" : "Control flow examples in Java and Kotlin",
+  "id": "talk-3-j2k-control",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-3-j2k-control/b-j2k-control-structures.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05a-kotlin-packages-and-control-flow/talk-3-j2k-control/b-j2k-control-structures.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "GoogleMap Activity ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-01-architecture/arch.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-05b-map-activity",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "App Structure ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-01-architecture/arch.png",
+  
+  
+
+  "summary" : "Key classes and relationships in the application.",
+  "id": "talk-01-architecture",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-01-architecture/arch.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-01-architecture/arch.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Map Activity ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-02-google-map/google-map.png",
+  
+  
+
+  "summary" : "Google Map Activity can be inserted into an app via a Wizard from Studio. API Keys must be acquired from google directly.",
+  "id": "talk-02-google-map",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-02-google-map/google-map.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-02-google-map/google-map.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Cameras & Markers ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-03-markers/markers.png",
+  
+  
+
+  "summary" : "These abstractions enable the map view to be manipulated programatically, and facilitate direct manipulation by the user.",
+  "id": "talk-03-markers",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-03-markers/markers.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/talk-03-markers/markers.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-05 MapActivity",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/book-maps/img/main.png",
+  
+  
+
+  "summary" : "Include a MapActivity, enabling the user to select the location of the placemark",
+  "id": "book-maps",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-05-map-activity/unit-05b-map-activity/book-maps"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "06: Persistence ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/topic.jpg",
+  
+  
+
+  "summary" : "Kotlin Classes in detail. New Placemark Store class to save placemarks to the file system.",
+  "id": "topic-06-persistence",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Classes I ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-1-classes-1/classes-1.png",
+  
+  
+
+  "summary" : "Kotlin Classes I",
+  "id": "unit-06a-classes-and-inheritance",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Classes & Inheritance ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-1-classes-1/classes-1.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-1-classes-1/jJXS2ugUSDo",
+
+  
+
+  "summary" : "In kotlin, classes are more concise, explicit and fine-grained then Java",
+  "id": "talk-1-classes-1",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-1-classes-1/classes-1.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-1-classes-1/classes-1.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "J2K: Functions ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-2-j2k-functions/c-j2k-functions.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-2-j2k-functions/9LCThThqt_M",
+
+  
+
+  "summary" : "Functions in Java & Kotlin",
+  "id": "talk-2-j2k-functions",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-2-j2k-functions/c-j2k-functions.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06a-classes-and-inheritance/talk-2-j2k-functions/c-j2k-functions.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Persistence ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-1-file-formats/b-file-formats.png",
+  
+  
+
+  "summary" : "Korlin classes & Inheritance. Storing and retrieving placemarks. JSON file serialization",
+  "id": "unit-06b-json",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "File Formats ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-1-file-formats/b-file-formats.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-1-file-formats/keX5uAxghiI",
+
+  
+
+  "summary" : "When a simple file persistence strategy, CSV, Name/Value, YAML, XML & JSON are all potential candidate formats for file-based storage.",
+  "id": "talk-1-file-formats",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-1-file-formats/b-file-formats.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-1-file-formats/b-file-formats.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "JSON ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-json/json.gif",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-json/EhZyDHwuqhU",
+
+  
+
+  "summary" : "A detailed look at the syntax of JSON",
+  "id": "talk-2-json",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-json/json.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-json/json.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "JSON Store ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-placemark-json/placemarkj-json.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-placemark-json/6KRlpPhFNsc",
+
+  
+
+  "summary" : "A new PlacemarkStore implementation - PlacemarkJSONStore - to persist placemarks to a JSON file.",
+  "id": "talk-2-placemark-json",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-placemark-json/placemarkj-json.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/talk-2-placemark-json/placemarkj-json.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-06 JSON",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/book-json/img/main.png",
+  
+  
+
+  "summary" : "Save and restore placemarks from a JSON formatted file",
+  "id": "book-json",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-06-persistence/unit-06b-json/book-json"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "07: Layouts ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/topic.png",
+  
+  
+
+  "summary" : "Kotlin properties, fields, & interfaces. Constraint Layout. Introduce activity to display all placemark locations + details.",
+  "id": "topic-07-layouts",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Classes ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-1-properties-and-fields/properties-and-fields.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-07a-classes-2",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Properties & Fields ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-1-properties-and-fields/properties-and-fields.png",
+  
+  
+
+  "summary" : "Kotlin properties and fields offer a richer set of features and variants over Java",
+  "id": "talk-1-properties-and-fields",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-1-properties-and-fields/properties-and-fields.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-1-properties-and-fields/properties-and-fields.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "J2K : Classes ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-3-j2k-classes-and-objects/f-j2k-classes-and-objects.jpg",
+  
+  
+
+  "summary" : "Classes in Java & Kotlin",
+  "id": "talk-3-j2k-classes-and-objects",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-3-j2k-classes-and-objects/f-j2k-classes-and-objects.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07a-classes-2/talk-3-j2k-classes-and-objects/f-j2k-classes-and-objects.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Layouts ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/topic.png",
+  
+  
+
+  "summary" : "Constraint layout. Managing embedded maps. Initialisation and manipulation.",
+  "id": "unit-07b-map-view",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Constraint Layout ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-a-constraint-layout/constraint.png",
+  
+  
+
+  "summary" : "ConstraintLayout allows you to create large and complex layouts with a flat view",
+  "id": "talk-a-constraint-layout",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-a-constraint-layout/constraint.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-a-constraint-layout/constraint.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Overall Map Activity ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-b-overall-map/map.jpg",
+  
+  
+
+  "summary" : "Introduce an activity to display all placemarks on a single map.",
+  "id": "talk-b-overall-map",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-b-overall-map/map.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/talk-b-overall-map/map.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-07 MapView",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/book-0-map-view/img/main.png",
+  
+  
+
+  "summary" : "Display all placemarks on a map in a new activity",
+  "id": "book-0-map-view",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-07-layouts/unit-07b-map-view/book-0-map-view"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "08: Presenters ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/topic.png",
+  
+  
+
+  "summary" : "Introducing Model View Presenter - a pattern to enhance separation of concerns in the Activity classes",
+  "id": "topic-08-mvp",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Interfaces & Visibility Modifiers ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-1-interfaces/interfaces.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-08a-interfaces",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Interfaces ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-1-interfaces/interfaces.png",
+  
+  
+
+  "summary" : "Kotlin interfaces largely follow Java 8 conventions",
+  "id": "talk-1-interfaces",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-1-interfaces/interfaces.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-1-interfaces/interfaces.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Visibility ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-2-visibility/visibility.jpg",
+  
+  
+
+  "summary" : "Classes, objects, interfaces, constructors, functions, properties and their setters can have visibility modifiers.",
+  "id": "talk-2-visibility",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-2-visibility/visibility.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08a-interfaces/talk-2-visibility/visibility.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Model View Presenter ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp/mvp.png",
+  
+  
+
+  "summary" : "Model View Presenter",
+  "id": "unit-08b",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Model View Presenter ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp/mvp.png",
+  
+  
+
+  "summary" : "Overview of Model View Controller & Model View Presenter patterns",
+  "id": "talk-mvp",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp/mvp.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp/mvp.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "View/Presenter ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp-1-in-placemark/mvp-placemark.png",
+  
+  
+
+  "summary" : "Detailed review of conversion of PlacemarkActivity to PlacemarkView & PlacemarkPresenter",
+  "id": "talk-mvp-1-in-placemark",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp-1-in-placemark/mvp-placemark.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/talk-mvp-1-in-placemark/mvp-placemark.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-08a MVP I",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/book-1-mvp-1/img/main.jpg",
+  
+  
+
+  "summary" : "Refactor Activities to use the Model View Presenter pattern",
+  "id": "book-1-mvp-1",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08b/book-1-mvp-1"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "BaseView / BasePresenter ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/talk-mvp-2-baseview-presenter/mvp-placemark.png",
+  
+  
+
+  "summary" : "BaseView / BasePresenter",
+  "id": "unit-08c",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "BaseView BasePresenter ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/talk-mvp-2-baseview-presenter/mvp-placemark.png",
+  
+  
+
+  "summary" : "Factor out common MVP features into BaseView/Presenter classes",
+  "id": "talk-mvp-2-baseview-presenter",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/talk-mvp-2-baseview-presenter/mvp-placemark.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/talk-mvp-2-baseview-presenter/mvp-placemark.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-08b MVP II",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/book-2-mvp-2/img/main.jpg",
+  
+  
+
+  "summary" : "Complete the presenter pattern implementation, introducing BaseView & BasePresenter classes",
+  "id": "book-2-mvp-2",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-08-mvp/unit-08c/book-2-mvp-2"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "09: Location ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/topic.png",
+  
+  
+
+  "summary" : "Kotlin visibility & extensions. Determine the devices current location & resolve in a map.",
+  "id": "topic-09-location",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin Extensions, Data & Sealed Classes ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-1-extensions/extensions.jpg",
+  
+  
+
+  "summary" : "",
+  "id": "unit-09a-extensions-sealed",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Extensions  ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-1-extensions/extensions.jpg",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-1-extensions/UgB4tJD4QQY",
+
+  
+
+  "summary" : "The ability to extend a class with new functionality without having to inherit from the class",
+  "id": "talk-1-extensions",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-1-extensions/extensions.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-1-extensions/extensions.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Data Classes ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-2-data-classes/data-classes.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-2-data-classes/Oa6YSKHvsZQ",
+
+  
+
+  "summary" : "Classes whose main purpose is to hold data.",
+  "id": "talk-2-data-classes",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-2-data-classes/data-classes.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-2-data-classes/data-classes.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Sealed Classes ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-3-sealed-classes/sealed-classes.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-3-sealed-classes/Nkc9p4rO0hk",
+
+  
+
+  "summary" : "Sealed classes are used for representing restricted class hierarchies",
+  "id": "talk-3-sealed-classes",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-3-sealed-classes/sealed-classes.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09a-extensions-sealed/talk-3-sealed-classes/sealed-classes.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Last Known Location ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-0-location-api/location-api.png",
+  
+  
+
+  "summary" : "Configure Markers and listen for marker events",
+  "id": "unit-09b-location",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Location API ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-0-location-api/location-api.png",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-0-location-api/p82--E7dLII",
+
+  
+
+  "summary" : "The location APIs available in Google Play services",
+  "id": "talk-0-location-api",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-0-location-api/location-api.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-0-location-api/location-api.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Current Location ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-1-map-current-location copy/map-current-location.jpg",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-1-map-current-location copy/19xhLiWnUGw",
+
+  
+
+  "summary" : "Using the  Fused Location Provider to recover the last known location",
+  "id": "talk-1-map-current-location copy",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-1-map-current-location copy/map-current-location.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/talk-1-map-current-location copy/map-current-location.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-09a Location",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/book-1-location/img/main.png",
+  
+  
+
+  "summary" : "When creating a new placemark, use the current location as the starting point.",
+  "id": "book-1-location",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09b-location/book-1-location"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Current Location Tracking ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/talk-2-tracking/tracking.jpg",
+  
+  
+
+  "summary" : "Configure Markers and listen for marker events",
+  "id": "unit-09c",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Location Tracking ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/talk-2-tracking/tracking.jpg",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/talk-2-tracking/mMOCcZb6Q9o",
+
+  
+
+  "summary" : "Track the location, in real time, of the device.",
+  "id": "talk-2-tracking",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/talk-2-tracking/tracking.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/talk-2-tracking/tracking.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-09b Tracking",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/book-2-location/img/main.png",
+  
+  
+
+  "summary" : "Extend the location facility to track location in real time.",
+  "id": "book-2-location",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/unit-09c/book-2-location"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "panelvideo",
+  "title" : "Location Overview ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/panelvideo/",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-09-location/panelvideo/Ai_WRkdtwEc",
+
+  
+
+  "summary" : "",
+  "id": "panelvideo",
+  
+    "route" : "Ai_WRkdtwEc"
+  
+
+    
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "10: Rooms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/topic.jpg",
+  
+  
+
+  "summary" : "Kotlin Data & Sealed classes, Generics. Android Architecture Components. The Room framework. PlacemarkStoreRoom implementation",
+  "id": "topic-10-rooms",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Kotlin  ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-1-nested-and-enums/nested-and-enums.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-10a-kotlin",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Nested Classes & Enums ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-1-nested-and-enums/nested-and-enums.png",
+  
+  
+
+  "summary" : "Classes can be nested in other classes. Enums provide an elegant notation for a limited set of constant values",
+  "id": "talk-1-nested-and-enums",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-1-nested-and-enums/nested-and-enums.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-1-nested-and-enums/nested-and-enums.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Objects ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-2-objects/objects.png",
+  
+  
+
+  "summary" : "Objects, Singletons & Companion objects",
+  "id": "talk-2-objects",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-2-objects/objects.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-2-objects/objects.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Delegation ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-3-delegation/delegation.png",
+  
+  
+
+  "summary" : "A class can implement an interface Base by delegating all of its public members to a specified object",
+  "id": "talk-3-delegation",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-3-delegation/delegation.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10a-kotlin/talk-3-delegation/delegation.pdf"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "AndroidX ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-0-android-x/android-x.png",
+  
+  
+
+  "summary" : "AndroidX",
+  "id": "unit-10b-version-mgmt",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Jetpack & AndroidX ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-0-android-x/android-x.png",
+  
+  
+
+  "summary" : "AndroidX is the open-source project that the Android team uses to develop, test, package, version and release libraries within Jetpack",
+  "id": "talk-0-android-x",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-0-android-x/android-x.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-0-android-x/android-x.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Semantic Version Management ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-1-version-mgmt/version-mgmt.png",
+  
+  
+
+  "summary" : "A simple set of rules and requirements that dictate how version numbers are assigned and incremented",
+  "id": "talk-1-version-mgmt",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-1-version-mgmt/version-mgmt.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/talk-1-version-mgmt/version-mgmt.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-10a AndroidX",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/book-1/img/main.png",
+  
+  
+
+  "summary" : "Migrate to AndroidX + manage library versions more optimally",
+  "id": "book-1",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10b-version-mgmt/book-1"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Rooms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-1-rooms/rooms.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-10c-rooms",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Rooms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-1-rooms/rooms.png",
+  
+  
+
+  "summary" : "The Room persistence library provides an abstraction layer over SQLite",
+  "id": "talk-1-rooms",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-1-rooms/rooms.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-1-rooms/rooms.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Rooms in Placemark ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-2-placemark-rooms/placemark-rooms.png",
+  
+  
+
+  "summary" : "Implementation of PlacemarkStoreRoom, which stores placemarks in a SQLite database",
+  "id": "talk-2-placemark-rooms",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-2-placemark-rooms/placemark-rooms.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/talk-2-placemark-rooms/placemark-rooms.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-10b Rooms",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/book-1/img/main.png",
+  
+  
+
+  "summary" : "Introduce a new PlacemarkStore implementation to persist to an SQLite database",
+  "id": "book-1",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/unit-10c-rooms/book-1"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "panelvideo",
+  "title" : "Rooms ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/panelvideo/",
+  
+  
+    "video" : "#video/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-10-rooms/panelvideo/xv_ICzIEDDs",
+
+  
+
+  "summary" : "",
+  "id": "panelvideo",
+  
+    "route" : "xv_ICzIEDDs"
+  
+
+    
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "topic",
+  "title" : "11: Firebase ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/topic.jpg",
+  
+  
+
+  "summary" : "Introducing Firebase Authentication, Database and Storage services.",
+  "id": "topic-11-firebase",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase"
+  
+,
+  "los": [
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Firebase Authentication ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-1-firebase/firebase.png",
+  
+  
+
+  "summary" : "Firebase Authentication",
+  "id": "unit-11a-firebase-auth",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Firebase ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-1-firebase/firebase.png",
+  
+  
+
+  "summary" : "A set of cloud services from google delivering app infrastructure",
+  "id": "talk-1-firebase",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-1-firebase/firebase.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-1-firebase/firebase.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Firebase Auth ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-2-firebase-auth/firebase-auth.png",
+  
+  
+
+  "summary" : "Signup, Login and Logout in Placemark",
+  "id": "talk-2-firebase-auth",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-2-firebase-auth/firebase-auth.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/talk-2-firebase-auth/firebase-auth.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-11a Firebase Auth",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/book/img/main.png",
+  
+  
+
+  "summary" : "Authenticate users against the Firebase Authentication service",
+  "id": "book",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11a-firebase-auth/book"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Firebase Database ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/talk-1-database/firebase-database.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-11b",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Realtime Database ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/talk-1-database/firebase-database.png",
+  
+  
+
+  "summary" : "Storing & Retrieving placemarks to/from Firebase",
+  "id": "talk-1-database",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/talk-1-database/firebase-database.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/talk-1-database/firebase-database.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-11b Firebase Database",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/book/img/main.png",
+  
+  
+
+  "summary" : "Store placemarks in Firebase Realtime Database",
+  "id": "book",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11b/book"
+  
+
+      } 
+     ]
+  
+
+    } ,
+   {
+    
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "unit",
+  "title" : "Firebase Storage ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/talk-1-storage/storage.png",
+  
+  
+
+  "summary" : "",
+  "id": "unit-11c",
+  
+    "route" : "#topic/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c"
+  
+
+    
+  
+    ,"los" : [
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "talk",
+  "title" : "Storage ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/talk-1-storage/storage.png",
+  
+  
+
+  "summary" : "Storing & Retrieving placemark images",
+  "id": "talk-1-storage",
+  
+    "pdf" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/talk-1-storage/storage.pdf",
+    "route" : "#talk/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/talk-1-storage/storage.pdf"
+  
+
+      } ,
+     {
+      
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "lab",
+  "title" : "Lab-11c Firebase Storage",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/book/img/main.png",
+  
+  
+
+  "summary" : "Store images in Firebase Storage",
+  "id": "book",
+  
+    "route" : "#lab/wit-mobile-app-dev.github.io/1-2018-kotlin/topic-11-firebase/unit-11c/book"
+  
+
+      } 
+     ]
+  
+
+    } 
+   ]
+
+  },
+ {
+  
+  
+  
+  
+    "properties" : {}
+  
+,
+  "type" : "github",
+  "title" : "Placemark Repo ",
+  "img" : "https://wit-mobile-app-dev.github.io/1-2018-kotlin/github-placemark/github.jpg",
+  
+  
+
+  "summary" : "This is a complete repo of the Placemark application, including tags for all labs",
+  "id": "github-placemark",
+  
+    "route" : "https://github.com/wit-mobile-app-dev/placemark-18-solution"
+  
+,
+  "los": [
+   ]
+
+  }
+ ]
+  }
+
